@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  
+    <script src="JS/arrayscript.js"></script>
+    <link rel="stylesheet" href="CSS/stringstyle.css">
+</head>
+<body>
+  
+
+    <div class="twitter">
+    <button class="btt2">Characters <div id="count"></div></button> <button class="btt2">Words</button><br>
+    <input type="text" id="charlim" onchange="limchange()" placeholder="Enter a character limit">
+    <button id="refresh" onclick="fresh()">Clear</button>
+    <br>
+    <textarea id="text" onkeypress="post()"  cols="30" rows="10"></textarea>
+    <br>
+    <div class="text2">
+    <button id="btn1" onclick="slice()">Codense to character limit</button>
+    <span id="count1"></span> <span id="limit">/100</span>
+    </div>
+    <br>
+    <p id="inputuser"></p>
+    </div>
